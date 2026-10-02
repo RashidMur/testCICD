@@ -1,0 +1,16 @@
+package config;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class PostgresConfig {
+    public static final String username = "postgres";
+    public static final String password = "12345678";
+    public static final String baseUrl ="jdbc:postgresql://localhost:5432/postgres";
+    public static final Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(baseUrl,username,password);
+    }
+
+    
+}
