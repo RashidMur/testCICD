@@ -10,6 +10,7 @@ public class PostgresConfig {
     public static final String password1 = "12345678";
     public static final String password2 = "12345678";
     public static final String password3 = "12345678";
+    public static final String password4 = "12345678";
 
     public static final String baseUrl ="jdbc:postgresql://localhost:5432/postgres";
     public static final Connection getConnection() throws SQLException {
